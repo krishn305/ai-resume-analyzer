@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Resume Analyzer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>AI Resume Analyzer</h1>
+
+<div class="card upload">
+
+<div id="drop-zone">
+Drag & Drop Resume
+</div>
+
+<textarea id="job" placeholder="Paste Job Description"></textarea>
+
+<button onclick="analyze()">Analyze Resume</button>
+
+</div>
+
+<div id="loader" class="loader hidden"></div>
+
+<div class="dashboard">
+
+<div class="card">
+
+<h3>ATS Score</h3>
+
+<canvas id="gauge"></canvas>
+
+<h2 id="scoreText"></h2>
+
+</div>
+
+<div class="card">
+
+<h3>Skill Analysis</h3>
+
+<canvas id="skillsChart"></canvas>
+
+</div>
+
+</div>
+
+<div class="card result">
+
+<p id="missingSkills"></p>
+
+<p id="suggestions"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
